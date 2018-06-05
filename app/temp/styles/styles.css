@@ -384,7 +384,7 @@ img {
 @media (min-width: 800px) {
 
 .large-hero__title {
-         font-size: 3.2rem
+         font-size: 3.2ulp watchrem
    }
    }
 

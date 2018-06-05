@@ -21,7 +21,7 @@
       }
 
       @mixin atMedium {
-         font-size: 3.2rem;
+         font-size: 3.2ulp watchrem;
       }
 
       @mixin atLarge {
