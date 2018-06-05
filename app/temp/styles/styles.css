@@ -353,6 +353,14 @@ img {
    height: auto;
 }
 
+/* see vid 22 ~12:00 */
+
+* { /* the asteric selects everything on page */
+   box-sizing: border-box; /* padding or border not added to calculated width - so width is still [as defined below] 33.33% + 66.66% and less than 100% */
+}
+
+/* vid 22 ~08:00 : this clears floats */
+
 .large-hero {
    border-bottom: 10px solid #2f5572;
    position:relative;
@@ -444,6 +452,7 @@ img {
    }
 
 .wrapper {
+   overflow: hidden; /* this along with the negative margin-right style in "row.css" hides the last gutter in the row */
    padding-left: 18px;
    padding-right: 18px;
    max-width: 1200px;
@@ -524,4 +533,30 @@ img {
 
 .headline--b-margin-large {
       margin-bottom: 1.6em;
+   }
+
+.row::after {
+      content: "";
+      clear: both;
+      display: table;
+   }
+
+.row__gutters {
+      margin-right: -65px; /* this along with the overflow style in "wrapper" hides the last gutter in the row */
+   }
+
+.row--gutters > div { /* vid 22 @10:19 - this selects all the direct decendents of .row above */
+      padding-right: 65px;
+   }
+
+@media (min-width: 800px) {
+      .row__medium-4 {
+         float: left;
+         width: 33.33%;
+      }
+
+      .row__medium-8 {
+         float: left;
+         width: 66.66%;
+      }
    }

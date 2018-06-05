@@ -1,0 +1,24 @@
+.row {
+
+   @mixin clearfix;
+
+   &__gutters {
+      margin-right: -65px; /* this along with the overflow style in "wrapper" hides the last gutter in the row */
+   }
+
+   &--gutters > div { /* vid 22 @10:19 - this selects all the direct decendents of .row above */
+      padding-right: 65px;
+   }
+
+   @mixin atMedium {
+      &__medium-4 {
+         float: left;
+         width: 33.33%;
+      }
+
+      &__medium-8 {
+         float: left;
+         width: 66.66%;
+      }
+   }
+}

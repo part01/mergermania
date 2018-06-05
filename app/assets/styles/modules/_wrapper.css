@@ -1,4 +1,5 @@
 .wrapper {
+   overflow: hidden; /* this along with the negative margin-right style in "row.css" hides the last gutter in the row */
    padding-left: 18px;
    padding-right: 18px;
    max-width: 1200px;
