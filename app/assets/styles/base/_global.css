@@ -8,8 +8,6 @@ img {
    height: auto;
 }
 
-
-/* see vid 22 ~12:00 */
-* { /* the asteric selects everything on page */
-   box-sizing: border-box; /* padding or border not added to calculated width - so width is still [as defined below] 33.33% + 66.66% and less than 100% */
+* {
+   box-sizing: border-box;
 }

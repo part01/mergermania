@@ -16,8 +16,6 @@
    }
 }
 
-
-   /* vid 22 ~08:00 : this clears floats */
 @define-mixin clearfix {
    &::after {
       content: "";
