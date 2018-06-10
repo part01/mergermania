@@ -586,6 +586,10 @@ a {
       margin-top: 0;
    }
 
+.row {
+   /* End Equal Height Rules */
+}
+
 .row::after {
       content: "";
       clear: both;
@@ -660,7 +664,6 @@ a {
 
 .row--equal-height-at-medium {
          display: flex
-
    }
    }
 
